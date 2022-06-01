@@ -1,0 +1,15 @@
+{
+  "name": "swagger-theme",
+  "version": "1.0.0",
+  "description": "custom theme for swagger ui",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass styles/main.scss dist/style.css --style compressed",
+    "dev": "sass styles/main.scss dist/style.css --watch"
+  },
+  "author": "علی سالمی",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.52.1"
+  }
+}
