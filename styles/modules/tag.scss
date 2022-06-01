@@ -1,0 +1,12 @@
+.opblock-tag {
+  margin: 16px 0 !important;
+  cursor: initial !important;
+
+  &:hover {
+    background-color: transparent !important;
+  }
+
+  .expand-operation {
+    @extend %btn--icon;
+  }
+}

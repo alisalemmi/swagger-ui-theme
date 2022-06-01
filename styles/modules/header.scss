@@ -1,0 +1,61 @@
+.topbar {
+  display: none;
+}
+
+.info {
+  direction: rtl;
+
+  h2 {
+    &::before {
+      content: '';
+      width: 80px;
+      margin-left: 8px;
+      align-self: stretch;
+
+      background-image: url($logo);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  hgroup {
+    margin: 0 !important;
+  }
+
+  .description {
+    margin: 16px 0 !important;
+
+    p {
+      margin: 0 !important;
+    }
+  }
+}
+
+.title {
+  &,
+  > span {
+    display: flex;
+    align-items: center;
+  }
+
+  small {
+    top: 0 !important;
+    margin: 0 8px 0 0 !important;
+
+    background-color: $color-primary !important;
+
+    &:first-child {
+      background-color: $color-secondary !important;
+    }
+  }
+}
+
+.btn.authorize {
+  color: #fff !important;
+  background-color: $color-primary !important;
+
+  > span {
+    padding: 0 !important;
+    margin-right: 8px !important;
+  }
+}

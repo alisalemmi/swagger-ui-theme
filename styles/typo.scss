@@ -4,10 +4,14 @@
 .swagger-ui {
   p,
   select,
+  .info a,
   .title,
+  .btn,
   .schemes-title,
   .servers-title,
-  .opblock-tag {
+  .opblock-tag,
+  .opblock-tag small,
+  .opblock-summary-description {
     font-family: 'Vazirmatn', sans-serif !important;
   }
 

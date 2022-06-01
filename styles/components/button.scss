@@ -1,0 +1,33 @@
+.btn {
+  display: flex !important;
+  padding: 8px 16px !important;
+  align-items: center !important;
+
+  color: $color-grey-darken1 !important;
+  background-color: $color-grey-lighten3 !important;
+  border: none !important;
+  border-radius: 4px !important;
+  font-weight: normal !important;
+
+  svg {
+    fill: currentColor !important;
+  }
+}
+
+%btn--icon {
+  padding: 8px !important;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 100%;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-grey-lighten3 !important;
+  }
+
+  svg {
+    fill: currentColor !important;
+  }
+}
