@@ -4,6 +4,8 @@
 .swagger-ui {
   p,
   select,
+  table thead tr th,
+  table thead tr td,
   .info a,
   .title,
   .btn,
@@ -11,7 +13,10 @@
   .servers-title,
   .opblock-tag,
   .opblock-tag small,
-  .opblock-summary-description {
+  .opblock-summary-description,
+  .opblock-section-header h4,
+  .opblock-section-header > label,
+  .response-col_status {
     font-family: 'Vazirmatn', sans-serif !important;
   }
 
