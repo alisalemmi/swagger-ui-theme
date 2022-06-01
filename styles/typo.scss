@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Vazirmatn&display=swap');
+
+.swagger-ui {
+  p,
+  select,
+  .title,
+  .schemes-title,
+  .servers-title,
+  .opblock-tag {
+    font-family: 'Vazirmatn', sans-serif !important;
+  }
+
+  pre,
+  code,
+  textarea,
+  .opblock-summary-path,
+  .opblock-summary-method {
+    font-family: 'Roboto Mono', monospace !important;
+  }
+}
