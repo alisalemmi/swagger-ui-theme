@@ -1,0 +1,82 @@
+@use 'sass:map';
+
+$methods: (
+  (
+    name: get,
+    color: $color-info
+  ),
+  (
+    name: post,
+    color: $color-success
+  ),
+  (
+    name: put,
+    color: $color-purple
+  ),
+  (
+    name: patch,
+    color: $color-warning
+  ),
+  (
+    name: delete,
+    color: $color-error
+  ),
+  (
+    name: options,
+    color: $color-yellow
+  ),
+  (
+    name: head,
+    color: $color-brown
+  )
+);
+
+.opblock {
+  &-summary {
+    padding: 12px !important;
+    cursor: initial !important;
+
+    &-path {
+      font-size: 14px !important;
+    }
+
+    &-method {
+      font-weight: normal !important;
+    }
+
+    &-control {
+      outline: none !important;
+      cursor: initial !important;
+
+      svg.arrow {
+        margin: -8px 0 !important;
+
+        @extend %btn--icon;
+      }
+    }
+
+    .authorization__btn {
+      margin: -8px 0 -8px 8px !important;
+
+      color: $color-secondary !important;
+      opacity: 1 !important;
+
+      @extend %btn--icon;
+
+      &.unlocked {
+        color: $color-grey-darken3 !important;
+      }
+    }
+  }
+
+  @each $method in $methods {
+    &-#{map.get($method, name)} &-summary {
+      border-color: map.get($method, color) !important;
+
+      &-method {
+        background-color: map.get($method, color) !important;
+        border-radius: 4px !important;
+      }
+    }
+  }
+}

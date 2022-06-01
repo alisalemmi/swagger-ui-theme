@@ -1,0 +1,8 @@
+@import './url';
+@import './run';
+
+.opblock {
+  margin: 0 0 24px 0 !important;
+
+  @extend %card;
+}
