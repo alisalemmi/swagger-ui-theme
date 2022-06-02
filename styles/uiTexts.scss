@@ -42,6 +42,14 @@ $uiTexts: (
     text: 'توضیحات'
   ),
   (
+    selector: 'tr td.col_header.response-col_links',
+    text: 'پیوست'
+  ),
+  (
+    selector: 'tr td.response-col_links',
+    text: ''
+  ),
+  (
     selector: '.headers-wrapper > h4.headers__title',
     text: 'Header ها:'
   ),
