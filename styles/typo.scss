@@ -28,7 +28,11 @@
   textarea,
   table.headers td,
   .opblock-summary-path,
-  .opblock-summary-method {
+  .opblock-summary-method,
+  .parameter__name,
+  .parameter__type,
+  .parameter__in,
+  .parameter__deprecated {
     font-family: 'Roboto Mono', monospace !important;
   }
 }

@@ -2,4 +2,108 @@
   &-section-header h4 {
     font-size: 18px !important;
   }
+
+  .parameter {
+    &__name {
+      font-size: 14px !important;
+      font-weight: 600 !important;
+
+      &.required {
+        &:after {
+          content: unset !important;
+        }
+      }
+    }
+
+    &__type {
+      font-size: 12px !important;
+      font-weight: 400 !important;
+      color: $color-grey-darken1 !important;
+
+      > .prop-format {
+        font-size: 10px !important;
+        color: $color-grey-darken3 !important;
+      }
+    }
+
+    &__in {
+      font-size: 12px !important;
+      font-weight: 400 !important;
+      color: $color-grey-darken1 !important;
+    }
+  }
+
+  .model-example {
+    margin-top: 16px !important;
+  }
+
+  .headers {
+    &-wrapper {
+      margin-top: 16px !important;
+    }
+
+    &__title {
+      margin: 0 !important;
+      padding-top: 16px !important;
+      font-size: 14px !important;
+    }
+  }
+
+  table {
+    &.parameters,
+    &.responses-table {
+      $gap: 12px;
+
+      > thead > tr > .col_header,
+      > tbody > tr > td {
+        padding-left: $gap !important;
+        padding-right: $gap !important;
+
+        &:first-child {
+          padding-left: 0 !important;
+        }
+
+        &:last-child {
+          padding-right: 0 !important;
+        }
+      }
+
+      thead .col_header {
+        padding-top: $gap !important;
+        padding-bottom: $gap !important;
+
+        font-size: 12px !important;
+      }
+
+      > tbody > tr {
+        > td {
+          padding-top: $gap * 2 !important;
+          padding-bottom: $gap * 2 !important;
+
+          .markdown {
+            > p {
+              margin: 0 !important;
+            }
+          }
+        }
+
+        &:last-child {
+          > td {
+            padding-bottom: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .body-param {
+    &-options label > span {
+      display: block !important;
+    }
+
+    &__example-edit {
+      color: #fff !important;
+      background-color: $color-primary !important;
+    }
+  }
 }
