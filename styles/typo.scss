@@ -3,6 +3,7 @@
 
 .swagger-ui {
   p,
+  label,
   select,
   table thead tr th,
   table thead tr td,
@@ -15,6 +16,7 @@
   .opblock-tag small,
   .opblock-summary-description,
   .opblock-section-header h4,
+  .responses-inner h4,
   .opblock-section-header > label,
   .response-col_status,
   .tab li {
@@ -24,6 +26,7 @@
   pre,
   code,
   textarea,
+  table.headers td,
   .opblock-summary-path,
   .opblock-summary-method {
     font-family: 'Roboto Mono', monospace !important;

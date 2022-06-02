@@ -1,0 +1,115 @@
+@use 'sass:map';
+
+$uiTexts: (
+  (
+    selector: '.authorize span',
+    text: 'تصدیق اصالت'
+  ),
+  (
+    selector: 'span.schemes-title',
+    text: 'پروتکل'
+  ),
+  (
+    selector: 'span.servers-title',
+    text: 'سرور ها'
+  ),
+  (
+    selector: 'h4.opblock-title',
+    text: 'ورودی ها'
+  ),
+  (
+    selector: 'th.parameters-col_name',
+    text: 'نام'
+  ),
+  (
+    selector: 'th.parameters-col_description',
+    text: 'توضیحات'
+  ),
+  (
+    selector: '.opblock-description-wrapper > p:first-child',
+    text: 'بدون مقدار ورودی'
+  ),
+  (
+    selector: '.responses-wrapper .opblock-section-header h4',
+    text: 'پاسخ ها'
+  ),
+  (
+    selector: 'td.col_header.response-col_status',
+    text: 'وضعیت'
+  ),
+  (
+    selector: 'tr td.col_header.response-col_description',
+    text: 'توضیحات'
+  ),
+  (
+    selector: '.headers-wrapper > h4.headers__title',
+    text: 'Header ها:'
+  ),
+  (
+    selector: '.headers > thead > tr.header-row > th.header-col:first-child',
+    text: 'نام'
+  ),
+  (
+    selector: '.headers > thead > tr.header-row > th.header-col',
+    text: 'توضیحات'
+  ),
+  (
+    selector: '.headers > thead > tr.header-row > th.header-col:last-child',
+    text: 'نوع'
+  ),
+  (
+    selector: '.responses-wrapper label > span',
+    text: 'قالب پاسخ'
+  ),
+  (
+    selector: '.body-param-options label > span',
+    text: 'قالب درخواست'
+  ),
+  (
+    selector: '.model-example ul.tab li.tabitem button[data-name=example]',
+    text: 'نمونه'
+  ),
+  (
+    selector: '.model-example ul.tab li.tabitem button[data-name=model]',
+    text: 'ساختار'
+  ),
+  (
+    selector: 'button.btn.try-out__btn',
+    text: 'ارسال درخواست'
+  ),
+  (
+    selector: 'button.btn.try-out__btn.cancel',
+    text: 'لغو'
+  ),
+  (
+    selector: 'button.btn.execute.opblock-control__btn',
+    text: 'ارسال درخواست'
+  ),
+  (
+    selector: 'button.btn.btn-clear.opblock-control__btn',
+    text: 'پاک کردن پاسخ'
+  ),
+  (
+    selector: 'button.btn.body-param__example-edit.edit.button',
+    text: 'ویرایش'
+  ),
+  (
+    selector: 'button.btn.body-param__example-edit.cancel.button',
+    text: 'ذخیره'
+  )
+);
+
+@each $uiText in $uiTexts {
+  #{map.get($uiText, selector)} {
+    text-indent: -10000px;
+    line-height: 0;
+    user-select: none;
+
+    &::after {
+      content: map.get($uiText, text);
+      display: block;
+      text-indent: 0;
+      line-height: initial;
+    }
+  }
+}
