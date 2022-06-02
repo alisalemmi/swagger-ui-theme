@@ -97,13 +97,46 @@
   }
 
   .body-param {
-    &-options label > span {
-      display: block !important;
+    &-options {
+      label {
+        margin: 0 !important;
+
+        select {
+          margin-top: 4px !important;
+        }
+
+        > span {
+          display: block !important;
+        }
+      }
+    }
+
+    .highlight-code + .body-param-options {
+      margin-top: 16px !important;
     }
 
     &__example-edit {
       color: #fff !important;
       background-color: $color-primary !important;
     }
+  }
+
+  pre.microlight,
+  textarea.body-param__text {
+    padding: 16px !important;
+
+    background-color: #272727 !important;
+    border-radius: 16px !important;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+      0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12) !important;
+  }
+
+  textarea.body-param__text {
+    margin: 0 !important;
+
+    color: #fff;
+    font-weight: 400 !important;
+    border: none !important;
+    line-height: normal !important;
   }
 }
