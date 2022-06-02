@@ -1,0 +1,25 @@
+.scheme-container {
+  .btn.authorize {
+    color: #fff !important;
+    background-color: $color-primary !important;
+
+    > span {
+      padding: 0 !important;
+      margin-right: 8px !important;
+    }
+  }
+
+  .servers-title,
+  .schemes-title {
+    display: block !important;
+    font-size: 14px !important;
+  }
+
+  label {
+    margin: 0 !important;
+
+    > select {
+      margin-top: 4px !important;
+    }
+  }
+}

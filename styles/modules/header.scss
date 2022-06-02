@@ -5,7 +5,24 @@
 .info {
   direction: rtl;
 
-  h2 {
+  h2.title {
+    &,
+    > span {
+      display: flex;
+      align-items: center;
+    }
+
+    small {
+      top: 0 !important;
+      margin: 0 8px 0 0 !important;
+
+      background-color: $color-primary !important;
+
+      &:first-child {
+        background-color: $color-secondary !important;
+      }
+    }
+
     &::before {
       content: '';
       width: 80px;
@@ -28,34 +45,5 @@
     p {
       margin: 0 !important;
     }
-  }
-}
-
-.title {
-  &,
-  > span {
-    display: flex;
-    align-items: center;
-  }
-
-  small {
-    top: 0 !important;
-    margin: 0 8px 0 0 !important;
-
-    background-color: $color-primary !important;
-
-    &:first-child {
-      background-color: $color-secondary !important;
-    }
-  }
-}
-
-.btn.authorize {
-  color: #fff !important;
-  background-color: $color-primary !important;
-
-  > span {
-    padding: 0 !important;
-    margin-right: 8px !important;
   }
 }
