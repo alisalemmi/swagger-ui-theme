@@ -139,4 +139,23 @@
     border: none !important;
     line-height: normal !important;
   }
+
+  .responses-inner {
+    h4 {
+      margin-top: 24px !important;
+      margin-bottom: 4px !important;
+
+      font-size: 14px !important;
+    }
+  }
+
+  tr.response > td.response-col_description {
+    h5 {
+      margin: 16px 0 4px 0 !important;
+    }
+
+    > :first-child > h5 {
+      margin: 0 !important;
+    }
+  }
 }

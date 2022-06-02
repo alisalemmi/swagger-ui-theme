@@ -96,6 +96,30 @@ $uiTexts: (
   (
     selector: 'button.btn.body-param__example-edit.cancel.button',
     text: 'ذخیره'
+  ),
+  (
+    selector: '.request-url > h4',
+    text: 'آدرس'
+  ),
+  (
+    selector: '.responses-inner > div > div > h4:last-of-type',
+    text: 'پاسخ سرور'
+  ),
+  (
+    selector: '.responses-inner > div > h4:last-child',
+    text: 'پاسخ ها'
+  ),
+  (
+    selector: 'tr.response > td.response-col_description :first-child h5',
+    text: 'Body'
+  ),
+  (
+    selector: 'tr.response > td.response-col_description :nth-child(2) h5',
+    text: 'Header ها'
+  ),
+  (
+    selector: 'tr.response > td.response-col_description :last-child h5',
+    text: 'مدت زمان'
   )
 );
 
