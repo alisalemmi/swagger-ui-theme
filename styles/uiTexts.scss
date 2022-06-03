@@ -6,6 +6,30 @@ $uiTexts: (
     text: 'تصدیق اصالت'
   ),
   (
+    selector: '.auth-wrapper .dialog-ux .modal-ux-header h3',
+    text: 'روش های تصدیق اصالت'
+  ),
+  (
+    selector: '.auth-wrapper .dialog-ux .wrapper:nth-child(3) > p',
+    text: 'نام:'
+  ),
+  (
+    selector: '.auth-wrapper .dialog-ux .wrapper:nth-child(4) > p',
+    text: 'محل ارسال:'
+  ),
+  (
+    selector: '.auth-wrapper .dialog-ux .btn.authorize',
+    text: 'ذخیره'
+  ),
+  (
+    selector: '.auth-wrapper .dialog-ux .btn.auth:not(.authorize, .btn-done)',
+    text: 'خروج'
+  ),
+  (
+    selector: '.auth-wrapper .dialog-ux .btn-done',
+    text: 'بستن'
+  ),
+  (
     selector: 'span.schemes-title',
     text: 'پروتکل'
   ),
