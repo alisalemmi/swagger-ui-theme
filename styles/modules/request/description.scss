@@ -123,18 +123,13 @@
 
   pre.microlight,
   textarea.body-param__text {
-    padding: 16px !important;
-
-    background-color: #272727 !important;
-    border-radius: 16px !important;
-    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
-      0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12) !important;
+    @extend %code-block;
   }
 
   textarea.body-param__text {
     margin: 0 !important;
 
-    color: #fff;
+    color: $color-code;
     font-weight: 400 !important;
     border: none !important;
     line-height: normal !important;
