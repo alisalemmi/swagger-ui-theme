@@ -112,4 +112,23 @@
       }
     }
   }
+
+  &-toggle {
+    display: flex !important;
+    position: static !important;
+    top: 0 !important;
+    margin: 0 8px !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    @extend %btn--icon;
+
+    &:hover {
+      background-color: $color-grey-darken4 !important;
+    }
+
+    &:after {
+      background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" width="24" height="24"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>') !important;
+    }
+  }
 }

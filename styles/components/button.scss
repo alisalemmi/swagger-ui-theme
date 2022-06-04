@@ -20,8 +20,8 @@
   height: 40px;
 
   border-radius: 100%;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
 
   &:hover {
     background-color: $color-grey-lighten3 !important;
