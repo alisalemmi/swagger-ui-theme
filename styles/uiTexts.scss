@@ -159,17 +159,24 @@ $uiTexts: (
   )
 );
 
+%text-changer {
+  text-indent: -10000px;
+  line-height: 0;
+  user-select: none;
+
+  &::after {
+    display: block;
+    text-indent: 0;
+    line-height: initial;
+  }
+}
+
 @each $uiText in $uiTexts {
   #{map.get($uiText, selector)} {
-    text-indent: -10000px;
-    line-height: 0;
-    user-select: none;
+    @extend %text-changer;
 
     &::after {
       content: map.get($uiText, text);
-      display: block;
-      text-indent: 0;
-      line-height: initial;
     }
   }
 }
