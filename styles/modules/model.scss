@@ -1,0 +1,115 @@
+.models {
+  @extend %card;
+
+  h4 {
+    padding: 12px !important;
+    padding-inline-start: 28px !important;
+
+    cursor: initial !important;
+
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+
+  &-control {
+    margin: 0 !important;
+
+    background-color: transparent !important;
+    outline: none !important;
+    cursor: initial !important;
+
+    > svg {
+      margin: -4px 0 !important;
+
+      @extend %btn--icon;
+    }
+  }
+}
+
+.model {
+  color: $color-grey-lighten3 !important;
+
+  &-container {
+    margin-bottom: 32px !important;
+
+    @extend %code-block;
+
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &-title {
+    color: $color-code !important;
+  }
+
+  .prop {
+    &-type {
+      color: $color-info !important;
+    }
+
+    &-format {
+      margin-left: 2px !important;
+      color: $color-warning !important;
+    }
+
+    &erty {
+      color: $color-yellow !important;
+
+      &.primitive {
+        color: $color-success !important;
+      }
+    }
+  }
+
+  .brace {
+    &-open,
+    &-close {
+      color: $color-grey-lighten2 !important;
+    }
+  }
+
+  .star {
+    margin-left: 4px !important;
+    color: $color-secondary !important;
+  }
+
+  &-box {
+    &-control {
+      display: flex !important;
+      align-items: center !important;
+
+      outline: none !important;
+    }
+
+    .pointer &,
+    & > & {
+      padding: 0 !important;
+    }
+
+    table.model {
+      tr {
+        > td {
+          padding: 4px 8px 4px 8px !important;
+
+          &:first-child {
+            padding-left: 32px !important;
+          }
+        }
+
+        &:first-child {
+          > td {
+            padding-top: 0 !important;
+          }
+        }
+
+        &:last-child {
+          > td {
+            padding-bottom: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}

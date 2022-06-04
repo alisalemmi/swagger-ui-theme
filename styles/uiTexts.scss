@@ -156,7 +156,11 @@ $uiTexts: (
   (
     selector: '.json-schema-array .json-schema-form-item-add',
     text: '+'
-  )
+  ),
+  (
+    selector: '.models-control span',
+    text: 'مدل ها'
+  ),
 );
 
 %text-changer {

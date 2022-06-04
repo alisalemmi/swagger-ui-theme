@@ -6,6 +6,7 @@
   p,
   input,
   label,
+  button,
   select,
   table thead tr th,
   table thead tr td,
@@ -23,7 +24,8 @@
   .opblock-section-header > label,
   .response-col_status,
   .tab li,
-  .dialog-ux .modal-ux-header h3 {
+  .dialog-ux .modal-ux-header h3,
+  .model-title {
     font-family: 'Vazirmatn', sans-serif !important;
   }
 
@@ -36,7 +38,8 @@
   .parameter__name,
   .parameter__type,
   .parameter__in,
-  .parameter__deprecated {
+  .parameter__deprecated,
+  .model > :not(.model-title) {
     font-family: 'Roboto Mono', monospace !important;
   }
 }
