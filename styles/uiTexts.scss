@@ -74,6 +74,10 @@ $uiTexts: (
     text: ''
   ),
   (
+    selector: 'tr td.response-col_status .response-undocumented',
+    text: 'نا مشخص'
+  ),
+  (
     selector: '.headers-wrapper > h4.headers__title',
     text: 'Header ها:'
   ),
