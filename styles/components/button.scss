@@ -15,7 +15,10 @@
 }
 
 %btn--icon {
+  display: flex !important;
   padding: 8px !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: 40px;
   height: 40px;
 

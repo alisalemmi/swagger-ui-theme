@@ -35,4 +35,11 @@
       }
     }
   }
+
+  .close-modal {
+    margin: -8px 0;
+    margin-inline-end: 8px;
+
+    @extend %btn--icon;
+  }
 }
