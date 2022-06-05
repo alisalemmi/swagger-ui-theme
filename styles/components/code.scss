@@ -1,9 +1,10 @@
-%code-block{
+%code-block {
+  direction: ltr;
   padding: 16px !important;
 
+  text-align: left !important;
   background-color: $background-code !important;
   border-radius: 16px !important;
-  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
-    0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12) !important;
-
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.14),
+    0 1px 14px 0 rgba(0, 0, 0, 0.12) !important;
 }

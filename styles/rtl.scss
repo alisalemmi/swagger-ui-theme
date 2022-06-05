@@ -1,0 +1,29 @@
+html {
+  direction: rtl;
+}
+
+.swagger-ui {
+  table {
+    > thead {
+      > tr {
+        > th,
+        > .col_header {
+          text-align: right !important;
+        }
+      }
+    }
+  }
+
+  select {
+    background-position: left 10px center !important;
+  }
+
+  .opblock {
+    &-summary {
+      &-description {
+        direction: rtl;
+        margin-right: 8px;
+      }
+    }
+  }
+}

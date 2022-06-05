@@ -1,7 +1,11 @@
 .opblock {
-  .try-out__btn:not(.cancel) {
-    color: #fff !important;
-    background-color: $color-secondary !important;
+  .try-out__btn {
+    margin: 0 !important;
+
+    &:not(.cancel) {
+      color: #fff !important;
+      background-color: $color-secondary !important;
+    }
   }
 
   .btn-group {
@@ -9,7 +13,7 @@
   }
 
   .execute {
-    margin-right: 8px !important;
+    margin-inline-end: 8px !important;
     color: #fff !important;
     background-color: $color-primary !important;
 

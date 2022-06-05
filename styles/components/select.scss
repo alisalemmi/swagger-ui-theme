@@ -5,3 +5,8 @@ select {
   border: 1px solid $color-grey-darken1 !important;
   outline: none !important;
 }
+
+.checkbox input[type='checkbox'] + label > .item {
+  margin: 0 !important;
+  margin-inline-end: 8px !important;
+}

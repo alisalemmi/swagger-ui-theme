@@ -1,11 +1,12 @@
 .scheme-container {
   .btn.authorize {
+    margin: 0 !important;
     color: #fff !important;
     background-color: $color-primary !important;
 
     > span {
       padding: 0 !important;
-      margin-right: 8px !important;
+      margin-inline-end: 8px !important;
     }
   }
 
