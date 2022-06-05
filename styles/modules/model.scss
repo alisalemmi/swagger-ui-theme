@@ -28,6 +28,7 @@
 }
 
 .model {
+  display: block !important;
   color: $color-grey-lighten3 !important;
 
   &-container {
@@ -42,37 +43,6 @@
 
   &-title {
     color: $color-code !important;
-  }
-
-  .prop {
-    &-type {
-      color: $color-info !important;
-    }
-
-    &-format {
-      margin-left: 2px !important;
-      color: $color-warning !important;
-    }
-
-    &erty {
-      color: $color-yellow !important;
-
-      &.primitive {
-        color: $color-success !important;
-      }
-    }
-  }
-
-  .brace {
-    &-open,
-    &-close {
-      color: $color-grey-lighten2 !important;
-    }
-  }
-
-  .star {
-    margin-left: 4px !important;
-    color: $color-secondary !important;
   }
 
   &-box {
@@ -111,17 +81,57 @@
         }
       }
     }
+
+    .prop {
+      &-type {
+        color: $color-info !important;
+      }
+
+      &-format {
+        margin-left: 2px !important;
+        color: $color-warning !important;
+      }
+
+      &erty {
+        display: block;
+        color: $color-yellow !important;
+
+        &.primitive {
+          color: $color-success !important;
+        }
+      }
+    }
+
+    .brace {
+      &-open,
+      &-close {
+        color: $color-grey-lighten2 !important;
+      }
+    }
+
+    .star {
+      margin-left: 4px !important;
+      color: $color-secondary !important;
+    }
+
+    br {
+      display: none;
+    }
   }
 
   &-toggle {
     display: flex !important;
     position: static !important;
     top: 0 !important;
-    margin: 0 8px !important;
+    margin: -9px 8px !important;
     align-items: center !important;
     justify-content: center !important;
 
     @extend %btn--icon;
+
+    &:first-child {
+      margin-left: 0 !important;
+    }
 
     &:hover {
       background-color: $color-grey-darken4 !important;
