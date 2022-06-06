@@ -4,12 +4,18 @@
   "description": "custom theme for swagger ui",
   "main": "index.js",
   "scripts": {
-    "build": "sass styles/main.scss dist/style.css --style compressed",
-    "dev": "sass styles/main.scss dist/style.css --watch"
+    "build:scss": "sass styles/main.scss dist/styles/main.css --style compressed",
+    "build:ts": "tsc",
+    "build": "npm run build:scss && npm run build:ts",
+    "dev:scss": "sass styles/main.scss dist/styles/main.css --watch",
+    "dev:ts": "tsc --watch",
+    "dev": "concurrently -c red,blue --kill-others npm:dev:scss npm:dev:ts"
   },
   "author": "علی سالمی",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.52.1"
+    "concurrently": "^7.2.1",
+    "sass": "^1.52.1",
+    "typescript": "^4.7.2"
   }
 }
