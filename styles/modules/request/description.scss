@@ -34,7 +34,7 @@
 
       > .prop-format {
         font-size: 10px !important;
-        color: $color-grey-darken3 !important;
+        color: $color-grey-darken2 !important;
       }
     }
 
@@ -128,7 +128,7 @@
     }
 
     &__example-edit {
-      color: #fff !important;
+      color: $color-white !important;
       background-color: $color-primary !important;
     }
   }

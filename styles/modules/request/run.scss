@@ -3,7 +3,7 @@
     margin: 0 !important;
 
     &:not(.cancel) {
-      color: #fff !important;
+      color: $color-white !important;
       background-color: $color-secondary !important;
     }
   }
@@ -14,7 +14,7 @@
 
   .execute {
     margin-inline-end: 8px !important;
-    color: #fff !important;
+    color: $color-white !important;
     background-color: $color-primary !important;
 
     &-wrapper {
