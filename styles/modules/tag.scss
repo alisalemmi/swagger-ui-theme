@@ -9,4 +9,8 @@
   .expand-operation {
     @extend %btn--icon;
   }
+
+  .link {
+    @extend %btn--text;
+  }
 }
