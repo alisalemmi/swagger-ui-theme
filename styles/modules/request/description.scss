@@ -126,7 +126,8 @@
   }
 
   pre.microlight,
-  textarea.body-param__text {
+  textarea.body-param__text,
+  .model-box {
     @extend %code-block;
   }
 
@@ -137,6 +138,10 @@
     font-weight: 400 !important;
     border: none !important;
     line-height: normal !important;
+  }
+
+  .model-box{
+    width: 100%;
   }
 
   .responses-inner {
