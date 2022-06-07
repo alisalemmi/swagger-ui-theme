@@ -28,6 +28,10 @@ $methods: (
   (
     name: head,
     color: $color-brown
+  ),
+  (
+    name: deprecated,
+    color: $color-grey-darken1
   )
 );
 

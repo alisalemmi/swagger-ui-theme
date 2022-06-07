@@ -1,0 +1,292 @@
+@function getColor($isDark, $level) {
+  @if $level == 'title' {
+    @return if($isDark, $color-grey-lighten4, $color-grey-darken4);
+  } @else if $level == 'color' {
+    @return if($isDark, $color-grey-lighten3, $color-grey-darken3);
+  } @else if $level == 'color-light' {
+    @return if($isDark, $color-grey-lighten2, $color-grey-darken2);
+  } @else if $level == 'color-lighten' {
+    @return if($isDark, $color-grey-lighten1, $color-grey-darken1);
+  } @else if $level == 'background' {
+    @return if($isDark, $color-grey-darken4, $color-white);
+  } @else if $level == 'button-background' {
+    @return if($isDark, $color-grey-darken1, $color-grey-lighten3);
+  } @else if $level == 'body-background' {
+    @return if($isDark, $color-grey-darken5, $color-white);
+  } @else if $level == 'form-background' {
+    @return if($isDark, $color-grey-darken2, $color-white);
+  } @else if $level == 'border' {
+    @return if($isDark, $color-black, $color-grey-darken1);
+  }
+}
+
+@mixin theme($isDark) {
+  background-color: getColor($isDark, 'body-background') !important;
+
+  .swagger-ui {
+    color: getColor($isDark, 'color') !important;
+  }
+
+  .topbar {
+    > .wrapper {
+      @if $isDark {
+        @extend %btn--icon--dark;
+      }
+
+      &::before {
+        display: if($isDark, none, block);
+      }
+
+      &::after {
+        display: if($isDark, block, none);
+      }
+    }
+  }
+
+  .info {
+    .title,
+    .base-url {
+      color: getColor($isDark, 'title') !important;
+    }
+
+    p {
+      color: getColor($isDark, 'color') !important;
+    }
+  }
+
+  .scheme-container {
+    background-color: getColor($isDark, 'background');
+
+    label {
+      color: getColor($isDark, 'color') !important;
+    }
+  }
+
+  .modal-ux {
+    background-color: getColor($isDark, 'background') !important;
+    border-color: getColor($isDark, 'body-background') !important;
+
+    &-header,
+    .auth-container {
+      border-color: getColor($isDark, 'body-background') !important;
+    }
+
+    &-header > h3,
+    &-content h4 {
+      color: getColor($isDark, 'title') !important;
+    }
+
+    &-content p {
+      color: getColor($isDark, 'color') !important;
+    }
+
+    .close-modal {
+      @if $isDark {
+        @extend %btn--icon--dark;
+      }
+    }
+
+    .scopes h2 {
+      color: getColor($isDark, 'color') !important;
+    }
+  }
+
+  .opblock,
+  .models {
+    @if $isDark {
+      @extend %card--dark;
+    }
+  }
+
+  .opblock {
+    &-tag {
+      color: getColor($isDark, 'title') !important;
+
+      @if $isDark {
+        border-bottom-color: $color-black !important;
+      }
+
+      .expand-operation {
+        @if $isDark {
+          @extend %btn--icon--dark;
+        }
+      }
+
+      small {
+        color: getColor($isDark, 'color') !important;
+      }
+    }
+
+    &-summary {
+      &-path {
+        color: getColor($isDark, 'title') !important;
+
+        &__deprecated {
+          color: getColor($isDark, 'color') !important;
+        }
+      }
+
+      &-description {
+        color: getColor($isDark, 'color') !important;
+      }
+
+      &-control > svg.arrow,
+      .authorization__btn {
+        @if $isDark {
+          @extend %btn--icon--dark;
+        }
+      }
+    }
+
+    &-section {
+      &-header {
+        background-color: getColor($isDark, 'background') !important;
+
+        h4 {
+          color: getColor($isDark, 'title') !important;
+        }
+
+        > label {
+          color: getColor($isDark, 'color') !important;
+        }
+      }
+    }
+
+    &-title_normal {
+      color: getColor($isDark, 'title') !important;
+    }
+
+    &-description {
+      &-wrapper p {
+        color: getColor($isDark, 'color') !important;
+      }
+    }
+
+    .parameter {
+      &__name {
+        color: getColor($isDark, 'title') !important;
+      }
+
+      &__type {
+        color: getColor($isDark, 'color-light') !important;
+
+        > .prop-format {
+          color: getColor($isDark, 'color-lighten') !important;
+        }
+      }
+
+      &__in {
+        color: getColor($isDark, 'color-light') !important;
+      }
+    }
+
+    .response {
+      &-col_status {
+        color: getColor($isDark, 'title') !important;
+      }
+
+      &-undocumented {
+        color: getColor($isDark, 'color-light') !important;
+      }
+    }
+
+    .responses-inner {
+      h4,
+      h5 {
+        color: getColor($isDark, 'title') !important;
+      }
+    }
+  }
+
+  .models {
+    > h4 {
+      color: getColor($isDark, 'title') !important;
+
+      @if $isDark {
+        border-bottom-color: $color-grey-darken5 !important;
+      }
+    }
+
+    &-control {
+      > svg {
+        @if $isDark {
+          @extend %btn--icon--dark;
+        }
+      }
+    }
+  }
+
+  table {
+    thead tr td,
+    thead tr th {
+      color: getColor($isDark, 'title') !important;
+    }
+
+    .headers {
+      td {
+        color: getColor($isDark, 'color') !important;
+      }
+    }
+  }
+
+  .tabitem {
+    color: getColor($isDark, 'title') !important;
+
+    &:hover {
+      background-color: getColor($isDark, 'form-background') !important;
+    }
+  }
+
+  .json-schema-array {
+    .json-schema-form-item {
+      &-add,
+      &-remove {
+        &:hover {
+          @if $isDark {
+            background-color: $color-grey-darken1 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .btn {
+    color: getColor($isDark, 'color') !important;
+    background-color: getColor($isDark, 'button-background') !important;
+
+    &.execute,
+    &.body-param__example-edit {
+      color: $color-white !important;
+      background-color: $color-primary !important;
+    }
+  }
+
+  select,
+  input {
+    color: getColor($isDark, 'color') !important;
+    background-color: getColor($isDark, 'form-background') !important;
+    border-color: getColor($isDark, 'border') !important;
+  }
+
+  select[disabled] > option {
+    color: getColor($isDark, 'color-lighten') !important;
+  }
+
+  input::placeholder {
+    color: getColor($isDark, 'color-lighten') !important;
+  }
+
+  label {
+    color: getColor($isDark, 'color') !important;
+  }
+}
+
+body {
+  &.dark {
+    @include theme(true);
+  }
+
+  &.light {
+    @include theme(false);
+  }
+}

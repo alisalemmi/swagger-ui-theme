@@ -3,14 +3,17 @@
   padding: 8px 16px !important;
   align-items: center !important;
 
-  color: $color-grey-darken1 !important;
-  background-color: $color-grey-lighten3 !important;
   border: none !important;
   border-radius: 4px !important;
   font-weight: normal !important;
+  transition: all 0.3s ease !important;
 
   svg {
     fill: currentColor !important;
+  }
+
+  &:hover {
+    opacity: 0.8;
   }
 }
 
@@ -23,6 +26,7 @@
     width: 40px;
     height: 40px;
 
+    fill: currentColor !important;
     border-radius: 100%;
     transition: all 0.3s ease !important;
     cursor: pointer !important;
@@ -31,8 +35,12 @@
       background-color: $color-grey-lighten3 !important;
     }
 
-    svg {
-      fill: currentColor !important;
+    &--dark {
+      color: $color-white !important;
+
+      &:hover {
+        background-color: $color-grey-darken3 !important;
+      }
     }
   }
 

@@ -2,6 +2,8 @@
 @import './typo';
 @import './uiTexts';
 @import './rtl';
+@import './dark';
+
 @import './components/card';
 @import './components/code';
 @import './components/input';
@@ -9,6 +11,7 @@
 @import './components/tab';
 @import './components/select';
 @import './components/button';
+
 @import './modules/header';
 @import './modules/scheme';
 @import './modules/auth';

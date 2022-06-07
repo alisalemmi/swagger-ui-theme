@@ -30,18 +30,15 @@
     &__type {
       font-size: 12px !important;
       font-weight: 400 !important;
-      color: $color-grey-darken1 !important;
 
       > .prop-format {
         font-size: 10px !important;
-        color: $color-grey-darken2 !important;
       }
     }
 
     &__in {
       font-size: 12px !important;
       font-weight: 400 !important;
-      color: $color-grey-darken1 !important;
     }
   }
 
@@ -125,11 +122,6 @@
 
     .highlight-code + .body-param-options {
       margin-top: 16px !important;
-    }
-
-    &__example-edit {
-      color: $color-white !important;
-      background-color: $color-primary !important;
     }
   }
 

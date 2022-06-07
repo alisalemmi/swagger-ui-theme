@@ -1,10 +1,14 @@
 .auth-wrapper .dialog-ux {
-  .modal-ux-content {
-    p {
-      font-size: 14px !important;
+  .modal-ux {
+    border-radius: 16px !important;
+    overflow: hidden;
+
+    &-content {
+      p {
+        font-size: 14px !important;
+      }
     }
   }
-
   .wrapper {
     &:nth-child(3),
     &:nth-child(4) {
