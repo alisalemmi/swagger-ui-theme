@@ -266,6 +266,10 @@
     color: getColor($isDark, 'color') !important;
     background-color: getColor($isDark, 'form-background') !important;
     border-color: getColor($isDark, 'border') !important;
+
+    &.invalid {
+      border-color: $color-error !important;
+    }
   }
 
   select[disabled] > option {
