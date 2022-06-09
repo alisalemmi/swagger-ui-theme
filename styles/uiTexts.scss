@@ -146,15 +146,33 @@ $uiTexts: (
     text: 'پاسخ ها'
   ),
   (
-    selector: 'tr.response > td.response-col_description :first-child h5',
+    selector:
+      'tr.response > td.response-col_description > .markdown ~ div:nth-child(2) > h5',
     text: 'Body'
   ),
   (
-    selector: 'tr.response > td.response-col_description :nth-child(2) h5',
+    selector:
+      'tr.response > td.response-col_description > .markdown ~ div:nth-child(3) > h5',
     text: 'Header ها'
   ),
   (
-    selector: 'tr.response > td.response-col_description :last-child h5',
+    selector:
+      'tr.response > td.response-col_description > .markdown ~ div:nth-child(4) > h5',
+    text: 'مدت زمان'
+  ),
+  (
+    selector:
+      'tr.response > td.response-col_description > div:nth-child(1) > h5',
+    text: 'Body'
+  ),
+  (
+    selector:
+      'tr.response > td.response-col_description > div:nth-child(2) > h5',
+    text: 'Header ها'
+  ),
+  (
+    selector:
+      'tr.response > td.response-col_description > div:nth-child(3) > h5',
     text: 'مدت زمان'
   ),
   (
@@ -164,7 +182,7 @@ $uiTexts: (
   (
     selector: '.models-control span',
     text: 'مدل ها'
-  ),
+  )
 );
 
 %text-changer {
