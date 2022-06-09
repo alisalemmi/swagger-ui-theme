@@ -100,6 +100,22 @@
         color: $color-warning !important;
       }
 
+      &-enum {
+        display: flex;
+        margin-top: 4px !important;
+        padding-top: 8px;
+        color: $color-info !important;
+
+        button {
+          margin-top: -10px;
+          margin-left: 4px;
+        }
+
+        span {
+          color: $color-warning !important;
+        }
+      }
+
       &erty {
         display: block;
         color: $color-yellow !important;
