@@ -18,6 +18,11 @@ html {
     background-position: left 10px center !important;
   }
 
+  blockquote {
+    border-right: 4px solid $color-primary;
+    border-left: none !important;
+  }
+
   .opblock {
     &-summary {
       &-description {
