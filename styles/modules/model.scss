@@ -71,6 +71,14 @@
         > td {
           padding: 4px 8px 4px 8px !important;
 
+          .model-box-control {
+            margin-top: -10px !important;
+            
+            &[aria-expanded='false'] {
+              margin-bottom: -10px !important;
+            }
+          }
+
           &:first-child {
             padding-left: $indent !important;
           }
@@ -148,7 +156,7 @@
     display: flex !important;
     position: static !important;
     top: 0 !important;
-    margin: -9px 8px !important;
+    margin: 0 8px !important;
     align-items: center !important;
     justify-content: center !important;
 
