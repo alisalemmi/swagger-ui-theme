@@ -89,9 +89,11 @@
           padding-top: $gap * 2 !important;
           padding-bottom: $gap * 2 !important;
 
-          .markdown {
-            > p {
-              margin: 0 !important;
+          > .response-col_description__inner {
+            > .markdown {
+              > p {
+                margin: 0 !important;
+              }
             }
           }
         }
@@ -140,7 +142,7 @@
     line-height: normal !important;
   }
 
-  .model-box{
+  .model-box {
     width: 100%;
   }
 
