@@ -46,11 +46,19 @@
   }
 
   &-box {
+    $indent: 24px;
+
     &-control {
       display: flex !important;
       align-items: center !important;
 
       outline: none !important;
+
+      ~ span > span.model,
+      ~ .markdown,
+      ~ .property {
+        margin-left: $indent;
+      }
     }
 
     .pointer &,
@@ -64,7 +72,7 @@
           padding: 4px 8px 4px 8px !important;
 
           &:first-child {
-            padding-left: 32px !important;
+            padding-left: $indent !important;
           }
         }
 
@@ -105,6 +113,7 @@
     .brace {
       &-open,
       &-close {
+        padding: 0 !important;
         color: $color-grey-lighten2 !important;
       }
     }
