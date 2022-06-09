@@ -220,6 +220,7 @@
     thead tr td,
     thead tr th {
       color: getColor($isDark, 'title') !important;
+      border-bottom-color: getColor($isDark, 'color-lighten') !important;
     }
 
     .headers {
